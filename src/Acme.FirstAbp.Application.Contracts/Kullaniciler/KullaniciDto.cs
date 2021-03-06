@@ -1,19 +1,16 @@
 ﻿using System;
-using Volo.Abp.Domain.Entities.Auditing;
+using System.Collections.Generic;
+using System.Text;
+using Volo.Abp.Application.Dtos;
 
 namespace Acme.FirstAbp.Kullaniciler
 {
-    public class Kullanici  : AuditedAggregateRoot<Guid>
+    class KullaniciDto : AuditedEntityDto<Guid>
     {
         // Kullanıcı Bilgileri 
-
         public string Name { get; set; }
-
         public KullaniciType Type { get; set; }
-        public string  Surname { get; set; }
-
+        public string Surname { get; set; }
         public int Num { get; set; }
-
-
     }
 }

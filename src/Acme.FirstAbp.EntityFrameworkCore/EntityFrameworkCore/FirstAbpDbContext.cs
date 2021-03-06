@@ -5,6 +5,7 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using Acme.FirstAbp.Kullaniciler;
 
 namespace Acme.FirstAbp.EntityFrameworkCore
 {
@@ -21,6 +22,8 @@ namespace Acme.FirstAbp.EntityFrameworkCore
     public class FirstAbpDbContext : AbpDbContext<FirstAbpDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+
+        public DbSet<Kullanici> Kullaniciler { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside FirstAbpDbContextModelCreatingExtensions.ConfigureFirstAbp
