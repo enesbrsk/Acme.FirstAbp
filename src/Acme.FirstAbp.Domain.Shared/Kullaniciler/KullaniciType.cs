@@ -2,6 +2,7 @@
 {
     public enum KullaniciType
     {
-        ScienceFiction
+        ScienceFiction,
+        Undefined
     }
 }

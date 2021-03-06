@@ -5,7 +5,7 @@ using Volo.Abp.Application.Dtos;
 
 namespace Acme.FirstAbp.Kullaniciler
 {
-    class KullaniciDto : AuditedEntityDto<Guid>
+    public class KullaniciDto : AuditedEntityDto<Guid>
     {
         // Kullanıcı Bilgileri 
         public string Name { get; set; }

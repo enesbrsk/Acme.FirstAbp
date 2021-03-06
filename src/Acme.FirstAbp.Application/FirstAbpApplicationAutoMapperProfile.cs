@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Acme.FirstAbp.Kullaniciler;
+using AutoMapper;
 
 namespace Acme.FirstAbp
 {
@@ -6,7 +7,10 @@ namespace Acme.FirstAbp
     {
         public FirstAbpApplicationAutoMapperProfile()
         {
-           
+             CreateMap<Kullanici, KullaniciDto>();
+            CreateMap<CreateUpdateKullaniciDto, Kullanici>();
+
+
         }
     }
 }
