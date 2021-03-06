@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acme.FirstAbp.Kullaniciler
 {
-    public class Kullanici
+    public class Kullanici :
     {
     }
 }
