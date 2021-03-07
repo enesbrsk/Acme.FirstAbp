@@ -1,8 +1,23 @@
 {
-  "culture": "en",
-  "texts": {
+  "Culture": "en",
+  "Texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:KullaniciStore": "Kullanici Store",
+    "Menu:Kullaniciler": "Kullaniciler",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "Name": "Name",
+    "Type": "Type",
+    "Num": "Num",
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "Enum:KullaniciType:0": "Man",
+    "Enum:KullaniciType:1": "Woman"
+
   }
 }

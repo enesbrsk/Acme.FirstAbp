@@ -29,6 +29,22 @@ namespace Acme.FirstAbp.Web.Menus
             var l = context.GetLocalizer<FirstAbpResource>();
 
             context.Menu.Items.Insert(0, new ApplicationMenuItem(FirstAbpMenus.Home, l["Menu:Home"], "~/"));
+
+            // Ana menüye kullanici sayfasi 
+
+            context.Menu.AddItem(
+            new ApplicationMenuItem(
+                "FirstAbpMenus",
+                l["Menu:FirstAbpMenus"],
+                icon: "fa fa-book"
+                ).AddItem(
+                 new ApplicationMenuItem(
+                "FirstAbpMenus.Kullaniciler",
+                 l["Menu:Kullaniciler"],
+                    url: "/Kullaniciler"
+        )
+    )
+);
         }
     }
 }
