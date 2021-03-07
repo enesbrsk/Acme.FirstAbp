@@ -15,9 +15,10 @@
     "Num": "Num",
     "CreationTime": "Creation time",
     "AreYouSure": "Are you sure?",
-    "AreYouSureToDelete": "Are you sure you want to delete this item?",
     "Enum:KullaniciType:0": "Man",
-    "Enum:KullaniciType:1": "Woman"
+    "Enum:KullaniciType:1": "Woman",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?"
+
 
   }
 }

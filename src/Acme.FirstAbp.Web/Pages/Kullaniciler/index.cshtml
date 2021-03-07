@@ -10,8 +10,19 @@
 }
 <abp-card>
     <abp-card-header>
-        <h2>@L["Kullaniciler"]</h2>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Kullaniciler"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewKullaniciButton"
+                            text="@L["NewKullanici"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
     </abp-card-header>
+
     <abp-card-body>
         <abp-table striped-rows="true" id="KullanicilerTable"></abp-table>
     </abp-card-body>

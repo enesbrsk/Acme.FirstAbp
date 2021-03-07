@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Acme.FirstAbp.Kullaniciler;
+using AutoMapper;
 
 namespace Acme.FirstAbp.Web
 {
@@ -6,7 +7,9 @@ namespace Acme.FirstAbp.Web
     {
         public FirstAbpWebAutoMapperProfile()
         {
-            //Define your AutoMapper configuration here for the Web project.
+            // KullaniciDto ile CreateUpdateKullaniciDto eşleştirme
+            CreateMap<KullaniciDto, CreateUpdateKullaniciDto>();
+
         }
     }
 }
